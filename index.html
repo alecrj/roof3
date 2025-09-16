@@ -9,29 +9,29 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary-red: #DC2626;
-            --secondary-red: #B91C1C;
-            --accent-red: #EF4444;
-            --dark-red: #991B1B;
+            --primary-blue: #1E40AF;
+            --secondary-blue: #1E3A8A;
+            --accent-orange: #F97316;
+            --dark-orange: #EA580C;
             --pure-white: #FFFFFF;
             --off-white: #FAFAFA;
             --light-gray: #F8F9FA;
             --medium-gray: #6B7280;
             --dark-gray: #1F2937;
-            --charcoal: #111827;
-            --text-light: #9CA3AF;
-            --border-light: #E5E7EB;
-            --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.08);
-            --shadow-light: 0 1px 3px rgba(0, 0, 0, 0.12);
-            --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.15);
-            --shadow-large: 0 20px 40px rgba(0, 0, 0, 0.20);
-            --border-radius: 8px;
-            --border-radius-large: 16px;
-            --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --navy: #0F172A;
+            --text-light: #94A3B8;
+            --border-light: #E2E8F0;
+            --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.08);
+            --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-medium: 0 10px 15px rgba(0, 0, 0, 0.1);
+            --shadow-large: 0 25px 50px rgba(0, 0, 0, 0.15);
+            --border-radius: 10px;
+            --border-radius-large: 20px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         * {
@@ -41,7 +41,7 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
             color: var(--dark-gray);
             font-weight: 400;
@@ -81,7 +81,7 @@
         .logo {
             font-size: 24px;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--charcoal) 0%, var(--primary-red) 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -113,19 +113,19 @@
         }
 
         .nav-links a:hover {
-            color: var(--primary-red);
+            color: var(--primary-blue);
         }
 
         .nav-links a.active {
-            color: var(--primary-red);
+            color: var(--primary-blue);
             font-weight: 500;
         }
 
         .nav-cta {
-            background: var(--primary-red);
+            background: var(--primary-blue);
             color: var(--pure-white) !important;
             padding: 16px 40px;
-            border-radius: 28px;
+            border-radius: 30px;
             font-weight: 600;
             transition: var(--transition);
             font-size: 14px;
@@ -135,7 +135,7 @@
         }
 
         .nav-cta:hover {
-            background: var(--secondary-red);
+            background: var(--secondary-blue);
             transform: translateY(-1px);
             box-shadow: var(--shadow-medium);
             letter-spacing: 0.5px;
@@ -163,7 +163,7 @@
 
         /* Hero Section - Improved */
         .hero {
-            background: linear-gradient(135deg, var(--charcoal) 0%, var(--dark-gray) 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
             color: var(--pure-white);
             padding: 160px 0 140px;
             text-align: center;
@@ -241,17 +241,17 @@
         }
 
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary-red) 0%, var(--accent-red) 100%);
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--dark-orange) 100%);
             color: var(--pure-white);
-            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+            box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
             font-weight: 700;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .btn-primary:hover {
-            background: linear-gradient(135deg, var(--secondary-red) 0%, var(--dark-red) 100%);
+            background: linear-gradient(135deg, var(--dark-orange) 0%, #C2410C 100%);
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(220, 38, 38, 0.5);
+            box-shadow: 0 12px 35px rgba(249, 115, 22, 0.5);
             letter-spacing: 0.5px;
         }
 
@@ -264,27 +264,27 @@
 
         .btn-secondary:hover {
             background: var(--pure-white);
-            color: var(--primary-red);
+            color: var(--primary-blue);
             transform: translateY(-2px);
             box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
             border-color: var(--pure-white);
         }
 
         .btn-accent {
-            background: var(--accent-red);
+            background: var(--accent-orange);
             color: var(--pure-white);
             box-shadow: var(--shadow-medium);
         }
 
         .btn-accent:hover {
-            background: var(--dark-red);
+            background: var(--dark-orange);
             transform: translateY(-2px);
             box-shadow: var(--shadow-large);
         }
 
         /* Scrolling Reviews Marquee */
         .reviews-marquee {
-            background: var(--dark-gray);
+            background: var(--navy);
             padding: 20px 0;
             overflow: hidden;
             position: relative;
@@ -307,7 +307,7 @@
         }
 
         .review-stars {
-            color: var(--accent-red);
+            color: var(--accent-orange);
             font-size: 18px;
             filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
         }
@@ -360,7 +360,7 @@
             transform: translateX(-50%);
             width: 60px;
             height: 4px;
-            background: linear-gradient(90deg, var(--primary-red), var(--accent-red));
+            background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
             border-radius: 2px;
         }
 
@@ -371,7 +371,7 @@
             font-weight: 800;
             letter-spacing: -1.5px;
             line-height: 1.15;
-            background: linear-gradient(135deg, var(--charcoal) 0%, var(--primary-red) 100%);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-orange) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -432,7 +432,7 @@
         .service-icon {
             width: 64px;
             height: 64px;
-            background: linear-gradient(135deg, var(--charcoal), var(--dark-gray));
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
             border-radius: 18px;
             display: flex;
             align-items: center;
@@ -441,7 +441,7 @@
             font-size: 24px;
             color: var(--pure-white);
             font-weight: 700;
-            box-shadow: 0 8px 25px rgba(31, 41, 55, 0.4);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -502,7 +502,7 @@
         .feature-number {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--primary-red), var(--accent-red));
+            background: linear-gradient(135deg, var(--accent-orange), var(--dark-orange));
             color: var(--pure-white);
             border-radius: 20px;
             display: flex;
@@ -511,7 +511,7 @@
             margin: 0 auto 32px;
             font-size: 24px;
             font-weight: 800;
-            box-shadow: 0 8px 25px rgba(220, 38, 38, 0.4);
+            box-shadow: 0 8px 25px rgba(249, 115, 22, 0.4);
             position: relative;
             overflow: hidden;
         }
@@ -615,7 +615,7 @@
 
         .testimonial-author {
             font-weight: 600;
-            color: var(--primary-red);
+            color: var(--primary-blue);
             font-size: 14px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -623,7 +623,7 @@
 
 
         .rating {
-            color: var(--accent-red);
+            color: var(--accent-orange);
             margin-bottom: 20px;
             font-size: 16px;
         }
@@ -670,7 +670,7 @@
         }
 
         .contact-item a {
-            color: var(--primary-red);
+            color: var(--primary-blue);
             text-decoration: none;
             font-weight: 500;
         }
@@ -716,8 +716,8 @@
         .form-group select:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: var(--primary-red);
-            box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
         }
 
         /* Integration Containers */
@@ -822,7 +822,7 @@
 
         /* Footer */
         footer {
-            background: var(--charcoal);
+            background: var(--navy);
             color: var(--pure-white);
             padding: 80px 0 40px;
         }
@@ -835,7 +835,7 @@
         }
 
         .footer-section h4 {
-            color: var(--accent-red);
+            color: var(--accent-orange);
             margin-bottom: 20px;
             font-weight: 600;
             font-size: 16px;
@@ -852,7 +852,7 @@
         }
 
         .footer-section a:hover {
-            color: var(--accent-red);
+            color: var(--accent-orange);
         }
 
         .footer-bottom {
@@ -1064,19 +1064,19 @@
         <section class="section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Why Choose Excellence</h2>
-                    <p>We combine decades of expertise with modern innovation to deliver roofing solutions that exceed expectations.</p>
+                    <h2>Why Choose Harrell Roofing</h2>
+                    <p>We believe in honest pricing, reliable service, and quality workmanship that stands the test of time.</p>
                 </div>
                 <div class="features-grid">
                     <div class="feature-card">
-                        <div class="feature-number">100%</div>
-                        <h3>Local Contractor</h3>
-                        <p>Proudly serving Tallahassee residents with personalized service and competitive pricing you can trust.</p>
+                        <div class="feature-number">★★★</div>
+                        <h3>Fair Pricing</h3>
+                        <p>No price gouging here! We believe in honest, competitive pricing that won't break your budget.</p>
                     </div>
                     <div class="feature-card">
-                        <div class="feature-number">A+</div>
-                        <h3>Licensed & Bonded</h3>
-                        <p>Fully licensed, bonded, and insured with comprehensive coverage for your complete peace of mind.</p>
+                        <div class="feature-number">24/7</div>
+                        <h3>Reliable Service</h3>
+                        <p>When we say we'll be there, we show up. No excuses, no delays - just dependable roofing service.</p>
                     </div>
                     <div class="feature-card">
                         <div class="feature-number">24/7</div>
@@ -1091,8 +1091,8 @@
         <section class="section business-info">
             <div class="container">
                 <div class="section-header">
-                    <h2>Serving Tallahassee Residents</h2>
-                    <p>Local roofing contractor dedicated to providing quality service and competitive pricing for homeowners throughout the area.</p>
+                    <h2>Your Local Roofing Partner</h2>
+                    <p>Family-owned business committed to treating every customer fairly with honest pricing and quality work you can count on.</p>
                 </div>
                 <div class="business-photo">
                     <div class=\"business-photo-placeholder\">\n                        <strong>Your Image Here</strong>\n                    </div>
@@ -1184,10 +1184,10 @@
                     <div>
                         <h3 style="color: var(--dark-gray); margin-bottom: 24px; font-size: 24px;">Our Legacy</h3>
                         <p style="margin-bottom: 24px; line-height: 1.7; color: var(--medium-gray); font-size: 16px;">
-                            Since 1985, Harrell Roofing LLC has stood as North Florida's beacon of roofing excellence. What began as a commitment to exceptional craftsmanship has evolved into a legacy of trust, quality, and innovation that spans generations of satisfied customers.
+                            Harrell Roofing LLC has served the Tallahassee community with dedication to quality roofing services. What began as a commitment to honest pricing and reliable service has built a reputation for dependable workmanship and customer satisfaction.
                         </p>
                         <p style="margin-bottom: 24px; line-height: 1.7; color: var(--medium-gray); font-size: 16px;">
-                            Our achievement of GAF Master Elite President's Club status places us among the top 3% of roofing contractors nationwide. This prestigious certification reflects our unwavering commitment to excellence in materials, installation, and customer satisfaction.
+                            Our commitment to honest pricing and reliable service has earned us positive customer reviews and repeat business. We focus on delivering quality workmanship without the price gouging often seen in the industry.
                         </p>
                         <p style="line-height: 1.7; color: var(--medium-gray); font-size: 16px;">
                             We understand that your home represents more than shelter—it's your sanctuary, your investment, your family's future. This understanding drives our meticulous approach to every project, from the smallest repair to the most comprehensive renovation.
@@ -1295,7 +1295,6 @@
                         <div class="contact-item">
                             <h4>Professional Credentials</h4>
                             <p>
-                                GAF Master Elite Certified<br>
                                 Licensed General Contractor<br>
                                 Fully Bonded & Insured
                             </p>
@@ -1330,8 +1329,8 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Harrell Roofing LLC Inc</h4>
-                    <p>North Florida's premium roofing and exterior specialists, delivering uncompromising quality and craftsmanship since 1985.</p>
-                    <p style="margin-top: 20px;"><strong>GAF Master Elite • Licensed • Bonded • Insured</strong></p>
+                    <p>Tallahassee's trusted roofing contractor, delivering quality workmanship and honest pricing for local homeowners.</p>
+                    <p style="margin-top: 20px;"><strong>Licensed • Bonded • Insured</strong></p>
                 </div>
                 <div class="footer-section">
                     <h4>Our Services</h4>
@@ -1360,7 +1359,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Harrell Roofing LLC Inc. All rights reserved. | GAF Master Elite Certified | Proudly serving North Florida since 1985</p>
+                <p>&copy; 2025 Harrell Roofing LLC. All rights reserved. | Licensed & Insured | Proudly serving Tallahassee</p>
             </div>
         </div>
     </footer>
